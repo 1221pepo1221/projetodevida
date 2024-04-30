@@ -26,6 +26,9 @@ function atualizaCronometro(){
         contadores[i].textContent = calculaTempo(tempos[i]);
     }
 }
+
+atualizaCronometro();
+setInterval(atualizaCronometro,1000);               
  
 contadores[0].textContent = calculaTempo(tempoObjetivo1);
 
@@ -43,3 +46,4 @@ function calculaTempo(tempoObjetivo) {
  
  return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
 }
+
